@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'RedHatText';
+  src: url(/fonts/Red_Hat_Text/static/RedHatText-Medium.woff2),
+  url(/fonts/Red_Hat_Text/static/RedHatText-Medium.woff);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'RedHatText';
+  src: url(/fonts/Red_Hat_Text/static/RedHatText-Regular.woff2), url(/fonts/Red_Hat_Text/static/RedHatText-Regular.woff);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'ReemKufi';
+  src: url(/fonts/Reem_Kufi/static/ReemKufi-Regular.woff2),
+  url(/fonts/Reem_Kufi/static/ReemKufi-Regular.woff);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'ReemKufi';
+  src: url(/fonts/Reem_Kufi/static/ReemKufi-Medium.woff2),
+  url(/fonts/Reem_Kufi/static/ReemKufi-Medium.woff);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}

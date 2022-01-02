@@ -1,3 +1,315 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
 
+.header-link, .hero-descr, .medico-descr, .qualified-descr, .qualified-main-text, .appointment-input, .appointment-input__select {
+  font-family: 'RedHatText', sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.btn, .statistic-item, .statistic-item span, .qualified-main span {
+  font-family: 'RedHatText', sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+
+.hero-title, .medico-title, .qualified-title {
+  font-family: 'ReemKufi', sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.appointment-title {
+  font-family: 'ReemKufi', sans-serif;
+  color: #222222;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 80px; }
+
+body {
+  font-size: 10px;
+  font-style: normal;
+  background: #FCFDFF; }
+
+img {
+  max-width: 100%; }
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.main {
+  background-image: url(/img/Main-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px;
+  padding-top: 50px; }
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px; }
+
+.header-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none; }
+
+.hero-title {
+  color: white;
+  font-size: 90px;
+  line-height: 110px;
+  max-width: 869px;
+  max-height: 220px;
+  margin-left: 100px; }
+
+.hero-descr {
+  color: #eeeeee;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 624px;
+  max-height: 90px;
+  margin-left: 100px;
+  margin-bottom: 50px; }
+
+.hero-btn {
+  margin-left: 100px; }
+
+.btn {
+  width: 221px;
+  height: 56px;
+  border: none;
+  border-radius: 60px;
+  background: #1d79e4;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  padding: 16px 32px;
+  cursor: pointer; }
+
+.statistics {
+  background-color: #F4F8FE;
+  min-height: 400px;
+  margin-bottom: 131px; }
+
+.statistic-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px; }
+
+.statistic-item-column {
+  margin-top: 110px; }
+
+.statistic-item span {
+  display: grid;
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 40px; }
+
+.medico-wrapper {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.medico {
+  background-color: #FCFDFF;
+  display: grid;
+  grid-template-columns: repeat(2, 38% 51%);
+  gap: 135px;
+  margin-bottom: 141px; }
+
+.medico-image {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  min-width: 180px; }
+
+.medico-about {
+  margin-left: auto;
+  margin-right: auto; }
+
+.medico-title {
+  max-width: 615px;
+  color: #222222;
+  font-size: 66px;
+  line-height: 80px;
+  margin: 0; }
+
+.medico-descr {
+  max-width: 470px;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 30px 0px 40px 0; }
+
+.qualified-wrapper {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.qualified-header {
+  display: grid;
+  grid-template-columns: repeat(2, 47% 38%);
+  gap: 190px;
+  margin-bottom: 20px; }
+
+.qualified-title {
+  max-width: 580px;
+  font-size: 65px;
+  line-height: 80px;
+  margin: 0;
+  margin-bottom: 30px; }
+
+.qualified-descr {
+  max-width: 549px;
+  color: #555555;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px; }
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid rgba(29, 121, 228, 0.35); }
+
+.social-item:not(:last-child) {
+  margin-right: 11px; }
+
+.social-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  opacity: 1;
+  background-size: 20px auto; }
+
+.social-link-fb {
+  background-image: url(/img/icon/facebook.svg); }
+
+.social-link-tw {
+  background-image: url(/img/icon/tw.svg); }
+
+.social-link-inst {
+  background-image: url(/img/icon/ins.svg); }
+
+.social-item:hover {
+  transform: scale(1.2);
+  background-color: #BAD6F7;
+  transition: 0.5s; }
+
+.doctor-photo {
+  display: flex; }
+
+.qualified-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 130px; }
+
+.qulified-main-item {
+  max-width: 298px;
+  max-height: 400px;
+  border-radius: 8px;
+  background-color: #FAFBFE; }
+
+.qualified-main-image {
+  max-width: 298px;
+  max-height: 298px; }
+
+.qualified-main-text {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #222222;
+  margin: 0;
+  box-shadow: 0px 6px 6px rgba(1, 69, 90, 0.06);
+  border-radius: 8px;
+  padding-left: 25px;
+  margin-top: 15px; }
+
+.qualified-main span {
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222; }
+
+.wrapper-appointment {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.appoinment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px; }
+
+.appoinment-image {
+  max-width: 47%; }
+
+.appointment-form {
+  max-width: 583px; }
+
+.appointment-title {
+  max-width: 583px;
+  font-size: 65px;
+  margin: 0;
+  margin-bottom: 35px; }
+
+.appointment-application {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px;
+  gap: 24px; }
+
+.appointment-input {
+  color: #999999;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  font-size: 18px;
+  appearance: none;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 40px; }
+
+.appointment-input__select {
+  color: #999999;
+  width: 188px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  font-size: 18px;
+  appearance: none;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+  background-image: url(/img/appoinment/arrowinput.svg);
+  background-repeat: no-repeat;
+  background-position: 100%; }
+
+.appointment-input:last-child {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
