@@ -42,7 +42,7 @@
           typesetting<br>industry. Lorem Ipsum has been the industry&rsquo;s
           standard dummy<br>text ever since the 1500s...
         </p>
-        <button type="button" class="btn hero-btn">Appointment Now</div></button>
+        <button type="button" class="btn hero-btn"><a href="#">Appointment Now</a></div></button>
       </section>
       </section>
     </div>
@@ -68,7 +68,7 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s...
           </p>
-          <button type="button" class="btn">Explor Now</button>
+          <button type="button" class="btn"><a href="#">Explor Now</a></button>
         </div>
       </section>
       </div>
@@ -112,7 +112,7 @@
             </li>
           </ul>
           </div>
-          <button type="button" class="btn">Contact Now</button>
+          <button type="button" class="btn"><a href="#">Contact Now</a></button>
           </div>
           <div class="doctor-photo"><img src="/img/qualified/item01.jpg" alt="dentist">
           </div>
@@ -140,7 +140,7 @@
       </div>
         <div class="container">
           <div class="wrapper-appointment">
-            <div class="appoinment">
+            <div class="appointment">
           <div class="appointment-image"><img src="/img/appoinment/appoinment-image.jpg" alt="appoinment"></div>
           <form action='/' method='post' enctype='multipart/form-data' class="appointment-form">
             <div class="appointment-title">Appointment create<br>for your treatment</div>
@@ -172,14 +172,26 @@
               <input type="text" placeholder="Select Time" class="appointment-input">
               </div>
             </div>
-            <button type="button" class="btn">Book Now</button>
+            <button type="button" class="btn"><a href="#">Book Now</a></button>
           </form>
             </div>
           </div>
     </div>
     <div class="container">
-      <section class="reviews">
-        <p class="reviews-text">
+      <div class="reviews-container">
+        <section class="reviews">
+          <div class="reviews-text">
+            <h2 class="reviews-title">
+              Our patients says
+            </h2>
+            <div class="reviews-grade">
+          <div class="reviews-grade-item"></div>
+          <div class="reviews-grade-item"></div>
+          <div class="reviews-grade-item"></div>
+          <div class="reviews-grade-item"></div>
+          <div class="reviews-grade-item"></div>
+        </div>
+          <p class="reviews-descr">
           Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
           typesetting industry. Lorem Ipsum has been the industry&rsquo;s
           standard dummy text ever since the 1500s, when an&nbsp;unknown printer
@@ -188,13 +200,37 @@
           centuries, but also the leap into electronic typesetting, remaining
           essentially unchanged.
         </p>
-        <div class="reviews-image"></div>
+          </div>
+        <div class="reviews-photo">
+          <button class="reviews-btn reviews-btn-left"></button>
+          <div class="reviews-photo-item"> <img src="/img/reviews/item01x2.jpg" alt="reviews"> </div>
+          <div class="reviews-photo-item"><img src="/img/reviews/item02x2.jpg" alt="reviews"></div>
+          <div class="reviews-photo-item"><img src="/img/reviews/item03.jpg" alt="reviews"></div>
+          <div class="reviews-photo-item"><img src="/img/reviews/item04x2.jpg" alt="reviews"></div>
+          <button class="reviews-btn reviews-btn-right"></button>
+        </div>
       </section>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper-blog">
+        <div class="blog">
+          <div class="blog-news">
+            <h1 class="blog-title">Our latest blog news</h1>
+            <p class="blog-descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <form action="/" class="blog-form">
+              <input class='blog-input' placeholder="Inter email address" type="text">
+              <button class="btn blog-btn"><a href="#">Subscribe</a></button>
+            </form>
+          </div>
+          <div class="blog-image"><img src="/img/blog/blog-image.jpg" alt="blog"></div>
+      </div>
+      </div>
     </div>
     <div class="container">
       <footer class="footer">
       <div class="footer-column">
-          <img src="" alt="" />
+        <div class="footer-logo"> <div class="footer-logo-first">M</div>edico</div>
           <p class="footer-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -203,7 +239,7 @@
         </div>
         <div class="footer-column">
           <h3 class="footer-title">Usefull Link</h3>
-          <ul class="footer-list list-reset">
+          <ul class="footer-list list-reset"> 
             <li class="footer-item">
               <a href="#" class="footer-link">About Us</a>
             </li>
@@ -240,35 +276,35 @@
           <a href="malito:oyasim@email.com" class="footer-mail"
             >Email: oyasim@email.com</a
           >
-          <ul class="social list-reset">
-            <li class="social-item">
+          <ul class="social social-footer list-reset">
+            <li class="social-footer-item">
               <a
                 href=""
-                class="social-link social-link-fb"
+                class="social-link-footer social-footer-link-fb"
                 target="_blank"
                 aria-label="Link to Facebook"
               ></a>
             </li>
-            <li class="social-item">
+            <li class="social-footer-item">
               <a
                 href=""
-                class="social-link social-link-tw"
+                class="social-link-footer social-footer-link-tw"
                 target="_blank"
                 aria-label="Link to Twitter"
               ></a>
             </li>
-            <li class="social-item">
+            <li class="social-footer-item">
               <a
                 href=""
-                class="social-link social-link-inst"
+                class="social-link-footer social-footer-link-inst"
                 target="_blank"
                 aria-label="Link to Instagram"
               ></a>
             </li>
           </ul>
         </div>
-      </div>
     </footer>
+    </div>
     </div>
   </body>
 </html>
