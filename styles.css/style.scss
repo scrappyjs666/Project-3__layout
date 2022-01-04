@@ -375,7 +375,6 @@ img {
   font-size: 6.5rem;
   margin: 0;
   margin-bottom: 35px;
-  width: 100%;
   }
   &-application {
   display: grid;
@@ -540,17 +539,18 @@ img {
   border: 1px solid rgba(29, 121, 228, 0.3);
   border-radius: 60px;
   position: relative;
-  padding: 27px 16px;
-  //*Вот форма вроде работает, но из-за того что кнопка сабскрайд на импуте наложена, то кнопка едет при адаптиве, как это можно было нормально сделать*//
+  padding: 27px 200px 27px 16px;
   }
+  //*Вот форма вроде работает, но из-за того что кнопка сабскрайд на импуте наложена, то кнопка едет при адаптиве, как это можно было нормально сделать*//
   &-btn {
   @extend %fontredhat400;
   width: 144px;
   height: 56px;
   position: absolute;
-  left: 35%;
   z-index: 1;
   opacity: 1;
+  display: inline-block;
+  left: 28%;
   }
 }
 
@@ -666,115 +666,4 @@ img {
 .social-footer-link-inst {
   background-image: url(/img/footer/footer-icon/instwhite.svg);
 }
-
-@media (max-width: 1024px) {
-  .hero-title {
-  font-size: 6.8rem;
-  line-height: 8rem;
-  }
-  .blog-btn {
-  left: 40%;
-  }
-  .qualified-section {
-  gap: 85px;
-  }
-  .qualified-item {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  .qualified-photo {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-  }
-  .qualified-photo-text {
-  max-width: 301px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .hero-title {
-  font-size: 5.8rem;
-  line-height: 6rem;
-  white-space: normal;
-}
-  .hero-descr {
-  margin-bottom: 70px;
-}
-  .statistic-item {
-  grid-template-columns: repeat(1, 1fr);
-  }
-  .medico {
-  grid-template-columns: repeat(1, 1fr);
-  }
-  .medico-about {
-  text-align: center;
-  }
-  .medico-descr {
-  text-align: center;
-  margin-left: 0;
-  }
-  .appointment {
-  grid-template-columns: repeat(1, 1fr);
-  margin-bottom: 80px;
-  }
-  .appointment-application {
-  grid-template-columns: repeat(1, 1fr);
-  }
-  .appointment-title {
-  text-align: center;
-  }
-  .appointment-input-column {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  }
-  .appointment-btn {
-  margin-left: 100px;
-  }
-  .blog {
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  text-align: center;
-  }
-  .blog-image {
-  display: none;
-  }
-  .blog-btn {
-  left: 54%;
-  }
-  .footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  }
-  .footer-item {
-  text-align: center;
-  }
-  .footer-title {
-  text-align: center;
-  }
-  .footer-logo {
-  text-align: center;
-  }
-  .footer-text {
-  max-width: 735px;
-  text-align: center;
-  }
-  .footer-mail {
-  display: block;
-  text-align: center;
-  }
-  .social-footer {
-  justify-content: center;
-  }
-}
-
-@media (max-width: 710px) {
-.header-logo {
-  display: none;
-}
-}
-
-
 
