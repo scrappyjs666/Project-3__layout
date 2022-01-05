@@ -72,7 +72,7 @@ img {
 //* padding/margin пикселями задавать или чем-то другим*//
 
 .main {
-  background-image: url(/img/main-img.jpg);
+  background-image: url(img/main-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -313,15 +313,15 @@ img {
 }
 
 .social-link-fb {
-  background-image: url(/img/icon/facebook.svg);
+  background-image: url(img/icon/facebook.svg);
 }
 
 .social-link-tw {
-  background-image: url(/img/icon/tw.svg);
+  background-image: url(img/icon/tw.svg);
 }
 
 .social-link-inst {
-  background-image: url(/img/icon/ins.svg);
+  background-image: url(img/icon/ins.svg);
 }
 
 .social-item:hover {
@@ -406,7 +406,7 @@ img {
   padding: 0;
   margin-right: 0;
   margin-bottom: 40px;
-  background-image: url(/img/appoinment/arrowinput.svg);
+  background-image: url(img/appoinment/arrowinput.svg);
   background-repeat: no-repeat;
   background-position: 100%;
   }
@@ -437,14 +437,14 @@ img {
   margin-bottom: 59px;
   &-item {
     &:last-child {
-    background-image: url(/img/reviews/starlastchild.svg);
+    background-image: url(img/reviews/starlastchild.svg);
     width: 19px;
     height: 18px;
     background-repeat: no-repeat;
     }
     &:not(:last-child) {
     margin-right: 9px;
-    background-image: url(/img/reviews/secondstar.svg);
+    background-image: url(img/reviews/secondstar.svg);
     width: 19px;
     height: 18px;
     background-repeat: no-repeat;
@@ -485,25 +485,25 @@ img {
   position: relative;
   margin: 0;
   &-left {
-    background-image: url(/img/reviews/arrow-btn-blueleft.svg);
+    background-image: url(img/reviews/arrow-btn-blueleft.svg);
     background-repeat: no-repeat;
     background-position: center; 
     transition: background-color 0.3s ease-in-out;
     margin-right: 70px;
   }
     &:hover{
-    background-image: url(/img/reviews/arrowbtnleft.svg);
+    background-image: url(img/reviews/arrowbtnleft.svg);
     background-color:#1D79E4;
     background-repeat: no-repeat;
     background-position: center;
     }
   &-right {
-  background-image: url(/img/reviews/arrow-btn-blueright.svg);
+  background-image: url(img/reviews/arrow-btn-blueright.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 70px;
     &:hover {
-    background-image: url(/img/reviews/arrowbtnright.svg);
+    background-image: url(img/reviews/arrowbtnright.svg);
     background-color:#1D79E4;
     background-repeat: no-repeat;
     background-position: center;
@@ -656,14 +656,14 @@ img {
 }
 
 .social-footer-link-fb {
-  background-image: url(/img/footer/footer-icon/facebookwhite.svg);
+  background-image: url(img/footer/footer-icon/facebookwhite.svg);
 }
 
 .social-footer-link-tw {
-  background-image: url(/img/footer/footer-icon/twitterwhite.svg);
+  background-image: url(img/footer/footer-icon/twitterwhite.svg);
 }
 
 .social-footer-link-inst {
-  background-image: url(/img/footer/footer-icon/instwhite.svg);
+  background-image: url(img/footer/footer-icon/instwhite.svg);
 }
 
