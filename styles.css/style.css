@@ -57,7 +57,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 800px; }
+  width: 100%; }
 
 .header {
   display: flex;
@@ -72,13 +72,11 @@ img {
   .header-link {
     line-height: 2.4rem;
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; }
     .header-link:hover {
-      background-color: #1d79e4;
-      border-radius: 50%;
-      padding: 10px 10px;
-      transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out;
-      transition-delay: 0.1s; }
+      border-bottom: 1px solid #1d79e4;
+      transition: all 0.2s ease-in-out; }
 
 .burger {
   width: 50px;
@@ -87,9 +85,10 @@ img {
   border: none;
   position: relative;
   border-radius: 50%;
-  transition: background-color 0.2s ease-in-out; }
+  transition: background-color 0.4s ease-in-out; }
   .burger:hover {
-    background-color: #1d79e4; }
+    background-color: #1d79e4;
+    cursor: pointer; }
   .burger-line {
     position: absolute;
     top: 50%;
@@ -137,32 +136,33 @@ img {
   margin-bottom: 50px; }
 
 .hero-btn {
-  margin-left: 100px; }
+  margin-left: 100px;
+  margin-bottom: 170px; }
 
 .btn {
-  width: 221px;
-  height: 56px;
+  min-width: 221px;
   border: none;
   border-radius: 60px;
   background: #1d79e4;
+  color: white;
   line-height: 2.4rem;
   padding: 16px 32px;
   cursor: pointer;
-  opacity: 0.8; }
+  opacity: 0.8;
+  transition: color 0.2s ease-in-out; }
   .btn:hover {
     opacity: 1;
-    transition: opacity 0.2s ease-in-out; }
+    transition: opacity 0.2s ease-in-out;
+    color: rgba(34, 34, 34, 0.9); }
   .btn a {
     color: white;
-    text-decoration: none; }
-  .btn a:hover {
-    color: rgba(34, 34, 34, 0.9);
-    color: 0.3s ease-in-out; }
+    text-decoration: none;
+    transition: 0.2s ease-in-out; }
 
 .statistics {
   background-color: #f4f8fe;
   margin-bottom: 131px;
-  min-height: 400px; }
+  padding-bottom: 120px; }
 
 .statistic-item {
   display: grid;
@@ -356,7 +356,8 @@ img {
   .reviews-descr {
     margin: 0 auto;
     line-height: 3rem;
-    margin-bottom: 58px; }
+    margin-bottom: 58px;
+    padding: 0 40px; }
   .reviews-photo {
     justify-content: center;
     display: flex;
@@ -364,11 +365,8 @@ img {
     .reviews-photo-item {
       width: 80px;
       height: 81px;
-      margin-right: 50px; }
-      .reviews-photo-item:hover {
-        transition-duration: 0.5s;
-        width: 127px;
-        height: 83px; }
+      margin-right: 50px;
+      transition-duration: 0.5s; }
       .reviews-photo-item:nth-of-type(4) {
         margin-right: 0; }
   .reviews-btn {
@@ -395,7 +393,8 @@ img {
       background-image: url(../img/reviews/arrow-btn-blueright.svg);
       background-repeat: no-repeat;
       background-position: center;
-      margin-left: 70px; }
+      margin-left: 70px;
+      transition: background-color 0.3s ease-in-out; }
       .reviews-btn-right:hover {
         background-image: url(../img/reviews/arrowbtnright.svg);
         background-color: #1d79e4;
@@ -416,6 +415,7 @@ img {
     line-height: 3rem;
     margin-bottom: 40px; }
   .blog-form {
+    position: relative;
     height: 56px;
     display: flex; }
   .blog-input {
@@ -432,7 +432,7 @@ img {
     z-index: 1;
     opacity: 1;
     position: absolute;
-    left: 35%; }
+    left: 46%; }
 
 .footer {
   background-color: #f4f8fe;
@@ -462,24 +462,18 @@ img {
   .footer-title {
     color: #222222;
     font-size: 2.4rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    transition: color 0.2s ease-in-out; }
     .footer-title:hover {
       color: #1d79e4;
-      transition: color 0.1s ease-in-out;
-      transition-delay: 0.1s;
       text-decoration: underline; }
   .footer-link {
     color: #555555;
     text-decoration: none;
-    line-height: 2.4rem; }
+    line-height: 2.4rem;
+    transition: color 0.2s ease-in-out; }
     .footer-link:hover {
-      text-align: center;
-      color: #fff;
-      background-color: #1d79e4;
-      border-radius: 50%;
-      padding: 7px 6px;
-      transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out, color 0.1s ease-in-out;
-      transition-delay: 0.1s; }
+      color: #1d79e4; }
   .footer-mail {
     font-family: 'DMSans', sans-serif;
     line-height: 2.3rem;
@@ -505,13 +499,13 @@ img {
   width: 38px;
   height: 38px;
   border-radius: 100%;
-  opacity: 1;
+  opacity: 0.9;
   background-size: 20px auto;
   background-color: #1d79e4;
-  border: none; }
+  border: none;
+  transition: opacity 0.2s ease-in-out; }
   .social-link-footer:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1, 1.2); }
+    opacity: 1; }
 
 .social-footer-link-fb {
   background-image: url(../img/footer/footer-icon/facebookwhite.svg); }

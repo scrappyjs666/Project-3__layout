@@ -40,7 +40,6 @@ html {
   font-size: 62.5%;
 }
 
-//*Могут вылезти какие-то траблы, если задавать fs в html 10px, а не стандартные 16*//
 body {
   font-size: 1.8rem;
   font-style: normal;
@@ -68,14 +67,12 @@ img {
   margin: 0 auto;
 }
 
-//* padding/margin пикселями задавать или чем-то другим*//
-
 .main {
   background-image: url(../img/main-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 800px;
+  width: 100%;
 }
 
 .header {
@@ -94,12 +91,10 @@ img {
     line-height: 2.4rem;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
     &:hover {
-      background-color: #1d79e4;
-      border-radius: 50%;
-      padding: 10px 10px;
-      transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out;
-      transition-delay: 0.1s;
+      border-bottom: 1px solid #1d79e4;
+      transition: all 0.2s ease-in-out;
     }
   }
 }
@@ -111,9 +106,10 @@ img {
   border: none;
   position: relative;
   border-radius: 50%;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
   &:hover {
     background-color: #1d79e4;
+    cursor: pointer;
   }
   &-line {
     position: absolute;
@@ -173,40 +169,38 @@ img {
 
 .hero-btn {
   margin-left: 100px;
+  margin-bottom: 170px;
 }
 
 .btn {
-  width: 221px;
-  height: 56px;
+  min-width: 221px;
   border: none;
   border-radius: 60px;
   background: rgba(29, 121, 228, 1) ;
+  color: rgba(255, 255, 255, 1);
   @extend %fontredhat500;
   line-height: 2.4rem;
   padding: 16px 32px;
   cursor: pointer;
   opacity: 0.8;
+  transition: color 0.2s ease-in-out;
   &:hover {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
+    color: rgba(34, 34, 34, 0.9);
   }
   & a {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-  }
-  & a:hover {
-    color: rgba(34, 34, 34, 0.9);
-    color: 0.3s ease-in-out;
-  }
+    transition: 0.2s ease-in-out;
+  } 
 }
 
 .statistics {
   background-color: #f4f8fe;
   margin-bottom: 131px;
-  min-height: 400px;
+  padding-bottom: 120px;
 }
-
-//*Задаю блоку минимальную высоту, ибо если он подстраивается под контент, то снизу нету отступа необходимого, что бы он красиво смотрелся или это не надо, или элементам блока задавать margin/padding что бы снизу необходимое пространство было. Вообще надо ли секциям задавать высоту*//
 
 .statistic-item {
   display: grid;
@@ -259,7 +253,6 @@ img {
     margin: 30px 0px 40px 0;
   }
 }
-//* Стоит ли задавать max-width для блоков, допустим есть блок text, он занимает 50% контейнера, в нем title и subtitle, задавать ли им max-width, что бы они стояли красивее*//
 
 .qualified-section {
   display: grid;
@@ -411,7 +404,6 @@ img {
     }
   }
 }
-//*Тут я какую-то пизду сделал со стрелкой в инпуте, но я не знаю как можно было лучше сделать*//
 
 .reviews {
   background-color: #ffffff;
@@ -419,7 +411,6 @@ img {
   text-align: center;
   margin-bottom: 130px;
   min-height: 600px;
-  //**Тут тоже самое по поводу высоты, если я её не задаю, то у меня элементы прижимаются к низу блока, выглядит не красиво**//
   &-title {
     margin: 0 auto;
     @extend %title;
@@ -455,6 +446,7 @@ img {
     margin: 0 auto;
     line-height: 3rem;
     margin-bottom: 58px;
+    padding: 0 40px;
   }
   &-photo {
     justify-content: center;
@@ -464,11 +456,7 @@ img {
       width: 80px;
       height: 81px;
       margin-right: 50px;
-      &:hover {
-        transition-duration: 0.5s;
-        width: 127px;
-        height: 83px;
-      }
+      transition-duration: 0.5s;
       &:nth-of-type(4) {
         margin-right: 0;
       }
@@ -501,6 +489,7 @@ img {
       background-repeat: no-repeat;
       background-position: center;
       margin-left: 70px;
+      transition: background-color 0.3s ease-in-out;  
       &:hover {
         background-image: url(../img/reviews/arrowbtnright.svg);
         background-color: #1d79e4;
@@ -529,6 +518,7 @@ img {
     margin-bottom: 40px;
   }
   &-form {
+    position: relative;
     height: 56px;
     display: flex;
   }
@@ -542,7 +532,6 @@ img {
     position: relative;
     padding: 16px 222px 16px 32px;
   }
-  //*Вот форма вроде работает, но из-за того что кнопка сабскрайд на импуте наложена, то кнопка едет при адаптиве, как это можно было нормально сделать, но видал ля какой я костыль сделал, молодой веб примат*//
   &-btn {
     @extend %fontredhat400;
     width: 144px;
@@ -550,7 +539,7 @@ img {
     z-index: 1;
     opacity: 1;
     position: absolute;
-    left: 35%;
+    left: 46%;
   }
 }
 
@@ -576,7 +565,6 @@ img {
       height: 60px;
       padding: 10px 0 10px 6px;
     }
-    //*Лого копировалось с фигмы только с фоном, пришлось передлывать лого самому, поэтому этот ебаный класс фёрст получилося*//
   }
   &-text {
     max-width: 329px;
@@ -592,10 +580,9 @@ img {
     color: rgba(34, 34, 34, 1);
     font-size: 2.4rem;
     line-height: 2rem;
+    transition: color 0.2s ease-in-out;
     &:hover {
       color: #1d79e4;
-      transition: color 0.1s ease-in-out;
-      transition-delay: 0.1s;
       text-decoration: underline;
     }
   }
@@ -604,15 +591,9 @@ img {
     color: rgba(85, 85, 85, 1);
     text-decoration: none;
     line-height: 2.4rem;
+    transition: color 0.2s ease-in-out;
     &:hover {
-      text-align: center;
-      color: #fff;
-      background-color: #1d79e4;
-      border-radius: 50%;
-      padding: 7px 6px;
-      transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out,
-        color 0.1s ease-in-out;
-      transition-delay: 0.1s;
+      color: #1d79e4;
     }
   }
   &-mail {
@@ -646,13 +627,13 @@ img {
   width: 38px;
   height: 38px;
   border-radius: 100%;
-  opacity: 1;
+  opacity: 0.9;
   background-size: 20px auto;
   background-color: rgba(29, 121, 228, 1);
   border: none;
+  transition: opacity 0.2s ease-in-out;
   &:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1, 1.2);
+    opacity: 1;
   }
 }
 
